@@ -1,24 +1,48 @@
-# mini-core-frontend
+# MiniCore Backend y Frontend
 
-## Project setup
-```
-npm install
-```
+Este proyecto consiste en un sistema para gestionar y reportar los gastos relacionados con empleados y departamentos de una organización. Incluye un backend desarrollado en ASP.NET Core y un frontend en Vue.js.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+---
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Características
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Backend
+- **Framework:** ASP.NET Core Web API
+- **Base de datos:** SQL Server
+- **Funcionalidad principal:**
+  - Filtrar y calcular los gastos por departamento en un rango de fechas.
+  - Exponer datos de empleados, departamentos y gastos a través de endpoints REST.
+- **Herramientas adicionales:**
+  - Entity Framework Core para acceso a la base de datos.
+  - CORS habilitado para permitir la comunicación con el frontend.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Frontend
+- **Framework:** Vue.js
+- **Funcionalidad principal:**
+  - Selección de un rango de fechas para filtrar los gastos.
+  - Visualización de los resultados en una tabla.
+  - Suma total de los gastos al final de la tabla.
+  - Navegación fluida con Vue Router.
+
+---
+
+## Requisitos Previos
+
+### Backend
+- .NET SDK 7.0 o superior
+- SQL Server (local o remoto)
+- Visual Studio 2022 o superior
+
+### Frontend
+- Node.js v16 o superior
+- Vue CLI 5 o superior
+
+---
+
+## Instalación
+
+### Backend
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/minicore-backend.git
+   cd minicore-backend
